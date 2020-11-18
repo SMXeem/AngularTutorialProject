@@ -1,0 +1,15 @@
+<p>ng-if-directive works!</p>
+<h2 *ngIf="true">Sayed</h2>
+<h2 *ngIf="false">Sayed 1</h2>
+<h2 *ngIf="isTrue; else elseBlock">Sayed 2</h2>
+<ng-template #elseBlock>
+    <h2>Name is hidden</h2>
+</ng-template>
+<br>
+<div *ngIf="isTrue; then thenBlock; else elseBlock2"></div>
+<ng-template #thenBlock>
+    <h2>This is Then Block</h2>
+</ng-template>
+<ng-template #elseBlock2>
+    <h2>This is else Block</h2>
+</ng-template>
