@@ -1,6 +1,7 @@
 <div>
   <h2>This is 2nd Component</h2>
-  <app-ng-for-directive>
+  <h1>{{message}}</h1>
+  <app-component-interaction (childEvent)="message=$event" [parentData]="name">
 
-  </app-ng-for-directive>
+  </app-component-interaction>
 </div>
