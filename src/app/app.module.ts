@@ -13,6 +13,7 @@ import { TemplateReferenceVariablesComponent } from './template-reference-variab
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
 import { NgIfDirectiveComponent } from './ng-if-directive/ng-if-directive.component';
 import { NgSwitchDirectiveComponent } from './ng-switch-directive/ng-switch-directive.component';
+import { NgForDirectiveComponent } from './ng-for-directive/ng-for-directive.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { NgSwitchDirectiveComponent } from './ng-switch-directive/ng-switch-dire
     TemplateReferenceVariablesComponent,
     TwoWayBindingComponent,
     NgIfDirectiveComponent,
-    NgSwitchDirectiveComponent
+    NgSwitchDirectiveComponent,
+    NgForDirectiveComponent
   ],
   imports: [
     BrowserModule,
