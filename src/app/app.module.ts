@@ -21,6 +21,7 @@ import { EmployeeDetailsComponent } from './employee-details/employee-details.co
 import { EmployeeService } from './employee.service';
 import { HttpClientModule } from '@angular/common/http';
 import { DepertmentComponent } from './depertment/depertment.component';
+import { DepartmentDetailsComponent } from './department-details/department-details.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,7 +40,8 @@ import { DepertmentComponent } from './depertment/depertment.component';
     EmployeeListComponent,
     EmployeeDetailsComponent,
     DepertmentComponent,
-    routingComponents
+    routingComponents,
+    DepartmentDetailsComponent
   ],
   imports: [
     BrowserModule,
