@@ -21,14 +21,22 @@ export class DepartmentDetailsComponent implements OnInit {
   }
   previous(){
     let previousId=this.departmentId-1;
-    this.router.navigate(['/depertments',previousId]);
+    //this.router.navigate(['/depertments',previousId]);
+    this.router.navigate(['../'+previousId],{relativeTo:this.route});
   }
   next(){
-    let previousId=this.departmentId+1;
-    this.router.navigate(['/depertments',previousId]);
+    let nextId=this.departmentId+1;
+    this.router.navigate(['../'+nextId],{relativeTo:this.route});
   }
   gotoDepartment(){
     let selectedId=this.departmentId ? this.departmentId:null;
-    this.router.navigate(['depertments',{id:selectedId}])
+    //this.router.navigate(['depertments',{id:selectedId}])
+    this.router.navigate(['../',{id:selectedId}],{relativeTo:this.route})
+  }
+  showOverview(){
+    this.router.navigate(['overview'],{relativeTo:this.route});
+  }
+  showContact(){
+    this.router.navigate(['contact'],{relativeTo:this.route});
   }
 }

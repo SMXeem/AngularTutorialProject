@@ -1,7 +1,10 @@
 <p>department-details works!</p>
+<button (click)="showOverview()">Overview</button>
+<button (click)="showContact()">Contact</button>
 <h3>Your selected id is {{departmentId}}</h3>
-<a (click)="previous()">Previous</a>
-<a (click)="next()">Next</a>
+<router-outlet></router-outlet>
+<button (click)="previous()">Previous</button>
+<button (click)="next()">Next</button>
 <div>
     <button (click)="gotoDepartment()">Back</button>
 </div>
